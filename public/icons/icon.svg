@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#1a2b1e"/>
+  <!-- map pin -->
+  <path d="M256 72c-72 0-128 56-128 126 0 92 128 242 128 242s128-150 128-242c0-70-56-126-128-126z" fill="#e8a13d"/>
+  <circle cx="256" cy="196" r="78" fill="#1a2b1e"/>
+  <!-- paw print -->
+  <ellipse cx="256" cy="216" rx="26" ry="22" fill="#eef3ec"/>
+  <circle cx="224" cy="176" r="12" fill="#eef3ec"/>
+  <circle cx="288" cy="176" r="12" fill="#eef3ec"/>
+  <circle cx="202" cy="204" r="10" fill="#eef3ec"/>
+  <circle cx="310" cy="204" r="10" fill="#eef3ec"/>
+</svg>

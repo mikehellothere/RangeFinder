@@ -1,0 +1,17 @@
+{
+  "name": "Rangefinder — Live Animal Tracking",
+  "short_name": "Rangefinder",
+  "description": "See live AI trail-camera animal detections on a map of your park",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#14201a",
+  "theme_color": "#1a2b1e",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a2b1e" />
+  <title>Rangefinder — Live Animal Tracking</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header id="topbar">
+    <div class="brand">
+      <img src="icons/icon.svg" alt="" class="brand-icon" />
+      <h1>Rangefinder</h1>
+    </div>
+    <div class="topbar-controls">
+      <button id="btn-locate" title="Centre on my location">📍 My location</button>
+      <button id="btn-sim" title="Pause or resume the demo cameras">⏸ Pause demo</button>
+      <span id="conn-dot" class="conn-dot" title="Connection status"></span>
+    </div>
+  </header>
+
+  <main id="layout">
+    <div id="map"></div>
+
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <h2>Detections</h2>
+        <span id="detection-count" class="count-badge">0</span>
+        <button id="btn-collapse" title="Show/hide detections">▾</button>
+      </div>
+      <ul id="feed"></ul>
+      <p id="feed-empty" class="feed-empty">Waiting for cameras…</p>
+    </aside>
+  </main>
+
+  <div id="toast" hidden></div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(curl -s -X POST http://localhost:3000/api/detections -H 'Content-Type: application/json' -d '{\"cameraId\":\"cam-2\",\"species\":\"elephant\",\"confidence\":0.97,\"behavior\":\"limping\",\"healthAlert\":true}')",
+      "Bash(curl -s -X POST http://localhost:3000/api/detections -H 'Content-Type: application/json' -d '{\"cameraId\":\"nope\",\"species\":\"lion\"}')"
+    ]
+  }
+}
