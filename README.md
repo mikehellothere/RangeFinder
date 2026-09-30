@@ -66,3 +66,10 @@ curl -X POST http://localhost:3000/api/detections \
   install location) instead of the demo seeding.
 - Thumbnails: add an image URL/upload to the detection package so rangers can
   verify sightings.
+
+CURRENT 30SEPT26
+Pi captures JPEG
+  → POST /get-upload-url (API Gateway → generateURL Lambda)
+  → PUT image to S3
+  → S3 event triggers classifyImage Lambda
+  → Rekognition DetectLabels → CloudWatch
